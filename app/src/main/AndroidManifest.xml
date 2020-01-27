@@ -13,7 +13,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="sensor">
+            android:screenOrientation="fullSensor">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +22,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ButtonOrientActivity">
-
+        <activity
+            android:name=".ButtonOrientActivity"
+            android:screenOrientation="fullSensor"
+            android:configChanges="keyboardHidden|orientation|screenSize">
         </activity>
     </application>
 

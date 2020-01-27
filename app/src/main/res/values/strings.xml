@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">Oriental</string>
+
     <string name="button1">Button ONE</string>
     <string name="button2">Button TWO</string>
     <string name="button3">Button THREE</string>
     <string name="button4">Button FOUR</string>
     <string name="button5">Button FIVE</string>
-    <string name="button6">Button SIX</string>
+    <string name="button6">I twist and twist, I want to confuse you!</string>
+
     <string name="button">button</string>
 </resources>
