@@ -6,4 +6,5 @@
     <string name="button4">Button FOUR</string>
     <string name="button5">Button FIVE</string>
     <string name="button6">Button SIX</string>
+    <string name="button">button</string>
 </resources>

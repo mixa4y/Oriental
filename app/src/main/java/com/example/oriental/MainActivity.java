@@ -3,6 +3,7 @@ package com.example.oriental;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Surface;
@@ -25,9 +26,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         final Button button1 = findViewById(R.id.button1);
         final Button button2 = findViewById(R.id.button2);
+        final Button button6 = findViewById(R.id.button6);
 
          button1.setOnClickListener(this);
          button2.setOnClickListener(this);
+         button6.setOnClickListener(this);
     }
 
     private String getScreenOrientation(){
@@ -63,6 +66,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 textView.setText(getScreenOrientation()); break;
             case R.id.button2:
                 textView.setText(getRotateOrientation()); break;
+            case R.id.button6:
+                Intent intent = new Intent(MainActivity.this, ButtonOrientActivity.class);
+                startActivity(intent);
         }
     }
 }
