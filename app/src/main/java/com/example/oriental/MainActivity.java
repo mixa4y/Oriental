@@ -28,19 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
          button1.setOnClickListener(this);
          button2.setOnClickListener(this);
-
-
-
-         /*new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-            textView.setText(getScreenOrientation());
-             }
-         });*/
-
-       /* button2.setOnClickListener((View.OnClickListener) this);
-             textView.setText(getRotateOrientation());
-*/
     }
 
     private String getScreenOrientation(){
