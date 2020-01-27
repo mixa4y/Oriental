@@ -8,9 +8,8 @@ import android.os.Bundle;
 import android.view.Surface;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.view.View.OnClickListener;
+
 
 
 
@@ -46,9 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private String getScreenOrientation(){
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_PORTRAIT)
-            return "Portrait orientation";
+            return "Portrait orientation.";
         else if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
-            return "Landscape orientation";
+            return "Landscape orientation.";
         else
             return "";
     }
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case Surface.ROTATION_90:
                 return "The screen has been rotated 90 degrees clockwise.";
             case Surface.ROTATION_180:
-                return "The screen has been rotated 180 degrees";
+                return "The screen has been rotated 180 degrees.";
             case Surface.ROTATION_270:
                 return "The screen has been rotated 90 degrees counterclockwise.";
                         default:
