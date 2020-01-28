@@ -42,7 +42,18 @@ public class ButtonOrientActivity extends AppCompatActivity {
             mButton.setText(ORIENTATION_LANDSCAPE);
         }
         // обновляем state на противоположное значение
+
         mState = !mState;
        }
-
 }
+
+   /* Проверка на существование
+     Если вы используете две разные разметки, то возможна ситуация, когда в альбомной ориентации используется кнопка,
+    которой нет в портретной ориентации. Это можете привести к ошибке в коде, поэтому нужно проверить существование кнопки:
+
+        Button landscapeButton = (Button) findViewById(R.id.landscapeButton);
+        if (landscapeButton != null) {
+        // Можно работать
+        }
+        На практике такое встречается
+        */
